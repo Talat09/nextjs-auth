@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
     }
     console.log(user);
     //update user in database
-    user.isVarified = true;
+    user.isVerified = true;
     user.verifyToken = undefined;
     user.verifyTokenExpiry = undefined;
     await user.save();
