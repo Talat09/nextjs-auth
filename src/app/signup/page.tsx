@@ -49,7 +49,7 @@ export default function SignupPage() {
       <input
         type="text"
         id="username"
-        className="p-4 rounded-md outline-none border border-green-500"
+        className="p-4 rounded-md outline-none border border-green-500 text-gray-500"
         value={user.username}
         onChange={(e) => setUser({ ...user, username: e.target.value })}
         placeholder="Enter your username"
@@ -58,7 +58,7 @@ export default function SignupPage() {
       <input
         type="email"
         id="email"
-        className="p-4 rounded-md outline-none border border-green-500"
+        className="p-4 rounded-md outline-none border border-green-500 text-gray-500"
         value={user.email}
         onChange={(e) => setUser({ ...user, email: e.target.value })}
         placeholder="Enter your Email"
@@ -67,7 +67,7 @@ export default function SignupPage() {
       <input
         type="password"
         id="password"
-        className="p-4 rounded-md outline-none border border-green-500"
+        className="p-4 rounded-md outline-none border border-green-500 text-gray-500"
         value={user.password}
         onChange={(e) => setUser({ ...user, password: e.target.value })}
         placeholder="Enter your password"
